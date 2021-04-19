@@ -1,0 +1,73 @@
+C:\Users\kuya9\source\repos\Naanep_GraphVisualization\Naanep_GraphVisualization\bin\Debug\Naanep_GraphVisualization.exe.config
+C:\Users\kuya9\source\repos\Naanep_GraphVisualization\Naanep_GraphVisualization\bin\Debug\Naanep_GraphVisualization.exe
+C:\Users\kuya9\source\repos\Naanep_GraphVisualization\Naanep_GraphVisualization\bin\Debug\Naanep_GraphVisualization.pdb
+C:\Users\kuya9\source\repos\Naanep_GraphVisualization\Naanep_GraphVisualization\obj\Debug\Naanep_GraphVisualization.csprojAssemblyReference.cache
+C:\Users\kuya9\source\repos\Naanep_GraphVisualization\Naanep_GraphVisualization\obj\Debug\MainWindow.g.cs
+C:\Users\kuya9\source\repos\Naanep_GraphVisualization\Naanep_GraphVisualization\obj\Debug\App.g.cs
+C:\Users\kuya9\source\repos\Naanep_GraphVisualization\Naanep_GraphVisualization\obj\Debug\Naanep_GraphVisualization_MarkupCompile.cache
+C:\Users\kuya9\source\repos\Naanep_GraphVisualization\Naanep_GraphVisualization\obj\Debug\Naanep_GraphVisualization_MarkupCompile.lref
+C:\Users\kuya9\source\repos\Naanep_GraphVisualization\Naanep_GraphVisualization\obj\Debug\MainWindow.baml
+C:\Users\kuya9\source\repos\Naanep_GraphVisualization\Naanep_GraphVisualization\obj\Debug\Naanep_GraphVisualization.g.resources
+C:\Users\kuya9\source\repos\Naanep_GraphVisualization\Naanep_GraphVisualization\obj\Debug\Naanep_GraphVisualization.Properties.Resources.resources
+C:\Users\kuya9\source\repos\Naanep_GraphVisualization\Naanep_GraphVisualization\obj\Debug\Naanep_GraphVisualization.csproj.GenerateResource.cache
+C:\Users\kuya9\source\repos\Naanep_GraphVisualization\Naanep_GraphVisualization\obj\Debug\Naanep_GraphVisualization.csproj.CoreCompileInputs.cache
+C:\Users\kuya9\source\repos\Naanep_GraphVisualization\Naanep_GraphVisualization\obj\Debug\Naanep_GraphVisualization.exe
+C:\Users\kuya9\source\repos\Naanep_GraphVisualization\Naanep_GraphVisualization\obj\Debug\Naanep_GraphVisualization.pdb
+C:\Users\kuya9\source\repos\Naanep_GraphVisualization\Naanep_GraphVisualization\bin\Debug\Graph.dll
+C:\Users\kuya9\source\repos\Naanep_GraphVisualization\Naanep_GraphVisualization\obj\Debug\Naanep_GraphVisualization.csproj.CopyComplete
+C:\Users\kuya9\source\repos\Naanep_GraphVisualization\Naanep_GraphVisualization\bin\Debug\nunit.framework.dll
+C:\Users\kuya9\source\repos\Naanep_GraphVisualization\Naanep_GraphVisualization\bin\Debug\Graph.pdb
+C:\Users\kuya9\source\repos\Naanep_GraphVisualization\Naanep_GraphVisualization\bin\Debug\nunit.framework.pdb
+C:\Users\kuya9\source\repos\Naanep_GraphVisualization\Naanep_GraphVisualization\bin\Debug\nunit.framework.xml
+C:\Users\kuya9\OneDrive\Desktop\Naanep_GraphVisualization\Naanep_GraphVisualization\bin\Debug\Naanep_GraphVisualization.exe.config
+C:\Users\kuya9\OneDrive\Desktop\Naanep_GraphVisualization\Naanep_GraphVisualization\bin\Debug\Naanep_GraphVisualization.exe
+C:\Users\kuya9\OneDrive\Desktop\Naanep_GraphVisualization\Naanep_GraphVisualization\bin\Debug\Naanep_GraphVisualization.pdb
+C:\Users\kuya9\OneDrive\Desktop\Naanep_GraphVisualization\Naanep_GraphVisualization\bin\Debug\Graph.dll
+C:\Users\kuya9\OneDrive\Desktop\Naanep_GraphVisualization\Naanep_GraphVisualization\bin\Debug\nunit.framework.dll
+C:\Users\kuya9\OneDrive\Desktop\Naanep_GraphVisualization\Naanep_GraphVisualization\bin\Debug\Graph.pdb
+C:\Users\kuya9\OneDrive\Desktop\Naanep_GraphVisualization\Naanep_GraphVisualization\bin\Debug\nunit.framework.pdb
+C:\Users\kuya9\OneDrive\Desktop\Naanep_GraphVisualization\Naanep_GraphVisualization\bin\Debug\nunit.framework.xml
+C:\Users\kuya9\OneDrive\Desktop\Naanep_GraphVisualization\Naanep_GraphVisualization\obj\Debug\Naanep_GraphVisualization.csprojAssemblyReference.cache
+C:\Users\kuya9\OneDrive\Desktop\Naanep_GraphVisualization\Naanep_GraphVisualization\obj\Debug\MainWindow.g.cs
+C:\Users\kuya9\OneDrive\Desktop\Naanep_GraphVisualization\Naanep_GraphVisualization\obj\Debug\App.g.cs
+C:\Users\kuya9\OneDrive\Desktop\Naanep_GraphVisualization\Naanep_GraphVisualization\obj\Debug\Naanep_GraphVisualization_MarkupCompile.cache
+C:\Users\kuya9\OneDrive\Desktop\Naanep_GraphVisualization\Naanep_GraphVisualization\obj\Debug\Naanep_GraphVisualization_MarkupCompile.lref
+C:\Users\kuya9\OneDrive\Desktop\Naanep_GraphVisualization\Naanep_GraphVisualization\obj\Debug\MainWindow.baml
+C:\Users\kuya9\OneDrive\Desktop\Naanep_GraphVisualization\Naanep_GraphVisualization\obj\Debug\Naanep_GraphVisualization.g.resources
+C:\Users\kuya9\OneDrive\Desktop\Naanep_GraphVisualization\Naanep_GraphVisualization\obj\Debug\Naanep_GraphVisualization.Properties.Resources.resources
+C:\Users\kuya9\OneDrive\Desktop\Naanep_GraphVisualization\Naanep_GraphVisualization\obj\Debug\Naanep_GraphVisualization.csproj.GenerateResource.cache
+C:\Users\kuya9\OneDrive\Desktop\Naanep_GraphVisualization\Naanep_GraphVisualization\obj\Debug\Naanep_GraphVisualization.csproj.CoreCompileInputs.cache
+C:\Users\kuya9\OneDrive\Desktop\Naanep_GraphVisualization\Naanep_GraphVisualization\obj\Debug\Naanep_GraphVisualization.csproj.CopyComplete
+C:\Users\kuya9\OneDrive\Desktop\Naanep_GraphVisualization\Naanep_GraphVisualization\obj\Debug\Naanep_GraphVisualization.exe
+C:\Users\kuya9\OneDrive\Desktop\Naanep_GraphVisualization\Naanep_GraphVisualization\obj\Debug\Naanep_GraphVisualization.pdb
+C:\Users\kuya9\OneDrive\Desktop\Final Project\Naanep_GraphVisualization\Naanep_GraphVisualization\bin\Debug\Naanep_GraphVisualization.exe.config
+C:\Users\kuya9\OneDrive\Desktop\Final Project\Naanep_GraphVisualization\Naanep_GraphVisualization\bin\Debug\Naanep_GraphVisualization.exe
+C:\Users\kuya9\OneDrive\Desktop\Final Project\Naanep_GraphVisualization\Naanep_GraphVisualization\bin\Debug\Naanep_GraphVisualization.pdb
+C:\Users\kuya9\OneDrive\Desktop\Final Project\Naanep_GraphVisualization\Naanep_GraphVisualization\obj\Debug\Naanep_GraphVisualization.csprojAssemblyReference.cache
+C:\Users\kuya9\OneDrive\Desktop\Final Project\Naanep_GraphVisualization\Naanep_GraphVisualization\obj\Debug\MainWindow.g.cs
+C:\Users\kuya9\OneDrive\Desktop\Final Project\Naanep_GraphVisualization\Naanep_GraphVisualization\obj\Debug\App.g.cs
+C:\Users\kuya9\OneDrive\Desktop\Final Project\Naanep_GraphVisualization\Naanep_GraphVisualization\obj\Debug\Naanep_GraphVisualization_MarkupCompile.cache
+C:\Users\kuya9\OneDrive\Desktop\Final Project\Naanep_GraphVisualization\Naanep_GraphVisualization\obj\Debug\Naanep_GraphVisualization_MarkupCompile.lref
+C:\Users\kuya9\OneDrive\Desktop\Final Project\Naanep_GraphVisualization\Naanep_GraphVisualization\obj\Debug\MainWindow.baml
+C:\Users\kuya9\OneDrive\Desktop\Final Project\Naanep_GraphVisualization\Naanep_GraphVisualization\obj\Debug\Naanep_GraphVisualization.g.resources
+C:\Users\kuya9\OneDrive\Desktop\Final Project\Naanep_GraphVisualization\Naanep_GraphVisualization\obj\Debug\Naanep_GraphVisualization.Properties.Resources.resources
+C:\Users\kuya9\OneDrive\Desktop\Final Project\Naanep_GraphVisualization\Naanep_GraphVisualization\obj\Debug\Naanep_GraphVisualization.csproj.GenerateResource.cache
+C:\Users\kuya9\OneDrive\Desktop\Final Project\Naanep_GraphVisualization\Naanep_GraphVisualization\obj\Debug\Naanep_GraphVisualization.csproj.CoreCompileInputs.cache
+C:\Users\kuya9\OneDrive\Desktop\Final Project\Naanep_GraphVisualization\Naanep_GraphVisualization\obj\Debug\Naanep_GraphVisualization.csproj.CopyComplete
+C:\Users\kuya9\OneDrive\Desktop\Final Project\Naanep_GraphVisualization\Naanep_GraphVisualization\obj\Debug\Naanep_GraphVisualization.exe
+C:\Users\kuya9\OneDrive\Desktop\Final Project\Naanep_GraphVisualization\Naanep_GraphVisualization\obj\Debug\Naanep_GraphVisualization.pdb
+C:\Users\Admin\Desktop\For Transfer\2nd Sem '19\Software Design\Naanep_GraphVisualization\Naanep_GraphVisualization\bin\Debug\Naanep_GraphVisualization.exe.config
+C:\Users\Admin\Desktop\For Transfer\2nd Sem '19\Software Design\Naanep_GraphVisualization\Naanep_GraphVisualization\bin\Debug\Naanep_GraphVisualization.exe
+C:\Users\Admin\Desktop\For Transfer\2nd Sem '19\Software Design\Naanep_GraphVisualization\Naanep_GraphVisualization\bin\Debug\Naanep_GraphVisualization.pdb
+C:\Users\Admin\Desktop\For Transfer\2nd Sem '19\Software Design\Naanep_GraphVisualization\Naanep_GraphVisualization\obj\Debug\Naanep_GraphVisualization.csprojAssemblyReference.cache
+C:\Users\Admin\Desktop\For Transfer\2nd Sem '19\Software Design\Naanep_GraphVisualization\Naanep_GraphVisualization\obj\Debug\MainWindow.g.cs
+C:\Users\Admin\Desktop\For Transfer\2nd Sem '19\Software Design\Naanep_GraphVisualization\Naanep_GraphVisualization\obj\Debug\App.g.cs
+C:\Users\Admin\Desktop\For Transfer\2nd Sem '19\Software Design\Naanep_GraphVisualization\Naanep_GraphVisualization\obj\Debug\Naanep_GraphVisualization_MarkupCompile.cache
+C:\Users\Admin\Desktop\For Transfer\2nd Sem '19\Software Design\Naanep_GraphVisualization\Naanep_GraphVisualization\obj\Debug\Naanep_GraphVisualization_MarkupCompile.lref
+C:\Users\Admin\Desktop\For Transfer\2nd Sem '19\Software Design\Naanep_GraphVisualization\Naanep_GraphVisualization\obj\Debug\MainWindow.baml
+C:\Users\Admin\Desktop\For Transfer\2nd Sem '19\Software Design\Naanep_GraphVisualization\Naanep_GraphVisualization\obj\Debug\Naanep_GraphVisualization.g.resources
+C:\Users\Admin\Desktop\For Transfer\2nd Sem '19\Software Design\Naanep_GraphVisualization\Naanep_GraphVisualization\obj\Debug\Naanep_GraphVisualization.Properties.Resources.resources
+C:\Users\Admin\Desktop\For Transfer\2nd Sem '19\Software Design\Naanep_GraphVisualization\Naanep_GraphVisualization\obj\Debug\Naanep_GraphVisualization.csproj.GenerateResource.cache
+C:\Users\Admin\Desktop\For Transfer\2nd Sem '19\Software Design\Naanep_GraphVisualization\Naanep_GraphVisualization\obj\Debug\Naanep_GraphVisualization.csproj.CopyComplete
+C:\Users\Admin\Desktop\For Transfer\2nd Sem '19\Software Design\Naanep_GraphVisualization\Naanep_GraphVisualization\obj\Debug\Naanep_GraphVisualization.exe
+C:\Users\Admin\Desktop\For Transfer\2nd Sem '19\Software Design\Naanep_GraphVisualization\Naanep_GraphVisualization\obj\Debug\Naanep_GraphVisualization.pdb

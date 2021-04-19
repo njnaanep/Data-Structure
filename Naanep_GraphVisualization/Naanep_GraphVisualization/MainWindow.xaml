@@ -1,0 +1,521 @@
+﻿<Window x:Class="Naanep_GraphVisualization.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Naanep_GraphVisualization"
+        mc:Ignorable="d"
+        Title="Graph Visualization" Height="500" Width="800" FontSize="20">
+    <Window.Resources>
+        <Style TargetType="Ellipse">
+            <Setter Property="Height" Value="30"/>
+            <Setter Property="Width" Value="30"/>
+            <Setter Property="Stroke" Value="black"/>
+            <Setter Property="Fill" Value="White"/>
+            <Setter Property="StrokeThickness" Value="2"/>
+            <Setter Property="Panel.ZIndex" Value="2"/>
+        </Style>
+
+        <Style TargetType="Label">
+            <Setter Property="Panel.ZIndex" Value="2"/>
+        </Style>
+
+        <Style TargetType="Polyline">
+            <Setter Property="StrokeThickness" Value="4"/>
+            <Setter Property="Stroke" Value="Black"/>
+            <Setter Property="Panel.ZIndex" Value="0"/>
+        </Style>
+    </Window.Resources>
+
+
+    <Grid >
+        <Grid>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="2*"/>
+                <ColumnDefinition Width="*"/>
+            </Grid.ColumnDefinitions>
+
+            <Grid Grid.Column="0">
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="4*"/>
+                    <RowDefinition Height="*"/>
+                </Grid.RowDefinitions>
+
+                <Canvas Name="CnvGraph"
+                        Grid.Row="0"
+                        Margin="10"
+                        MouseDown="CnvGraph_MouseDown"
+                        MouseMove="CnvGraph_OnMouseMove" 
+                        Background="#FFE8E8E8">
+
+                    <Polyline Name="ShortestPathLine" 
+                              Visibility="Collapsed" 
+                              Panel.ZIndex="1" 
+                              Stroke="RoyalBlue"/>
+
+                    <!--<Ellipse Name="EllipseA" Canvas.Left="40" Canvas.Top="40" Stroke="Black"/>
+                    <Label Canvas.Left="45" Canvas.Top="40" Content="A" FontSize="15"/>
+
+                    <Ellipse Name="EllipseB" Canvas.Left="100" Canvas.Top="100" Stroke="Blue"/>
+                    <Label Canvas.Left="105" Canvas.Top="100" Content="B" FontSize="15"/>
+
+                    <Polyline  Points="55,55 115,115" />
+
+                    <Label Content="55" Canvas.Left="80" Canvas.Top="60" FontSize="15" />-->
+
+                    <Ellipse Name="TempEllipse" Visibility="Collapsed"/>
+
+
+                </Canvas>
+
+                <StackPanel Grid.Column="0"
+                            Grid.Row="1"
+                            Orientation="Vertical"
+                            HorizontalAlignment="Center">
+                    <StackPanel Orientation="Horizontal" Margin="5">
+                        <Label Content="Shortest path"/>
+                        <Label Content="from"/>
+                        <ComboBox Name="CmbShortestFrom"
+                                  Width="120"
+                                  IsEnabled="False"
+                                  SelectionChanged="CmbShortestSelection"/>
+                        <Label Content="to"/>
+                        <ComboBox Name="CmbShortestTo" 
+                                  Width="120"
+                                  IsEnabled="False"
+                                  SelectionChanged="CmbShortestSelection"/>
+                    </StackPanel>
+                    <StackPanel Orientation="Horizontal" HorizontalAlignment="Left" Margin="5">
+                        <Button Name="BtnGetResult" Content="Get Result"  Visibility="Visible"  Width="120" FontWeight="Bold"  Click="Button_Click" IsEnabled="False"/>
+
+                        <Label Name="LabelResult" Content="Path: " FontWeight="Bold" Visibility="Collapsed" />
+                        <TextBlock Name="TxtBlockResult" Width="200" Margin="0,0,10,0" Visibility="Collapsed" VerticalAlignment="Center"/>
+
+                        <Label Name="LabelCost" Content="Cost: " FontWeight="Bold" Visibility="Collapsed"/>
+                        <TextBlock Name="TxtBlockCost" Width="70" Visibility="Collapsed"  VerticalAlignment="Center"/>
+
+
+                    </StackPanel>
+                </StackPanel>
+
+            </Grid>
+
+            <Grid Grid.Column="1" >
+
+                <TabControl Name="TabOption" Grid.Row="0" Margin="5" >
+                    <TabItem Header="0" Visibility="Collapsed" FontWeight="Bold">
+                        <Grid Background="#FFE5E5E5">
+                            <Grid.RowDefinitions>
+                                <RowDefinition Height="*"></RowDefinition>
+                                <RowDefinition Height="8*"></RowDefinition>
+                                <RowDefinition Height="*"></RowDefinition>
+                            </Grid.RowDefinitions>
+
+                            <Grid Grid.Row="0" Margin="5">
+                                <Grid.ColumnDefinitions>
+                                    <ColumnDefinition Width="*"/>
+                                    <ColumnDefinition Width="*"/>
+                                </Grid.ColumnDefinitions>
+
+                                <Label Grid.Column="0" 
+                                       Content="Vertices"
+                                       VerticalAlignment="Center"
+                                       HorizontalAlignment="Left"/>
+
+                                <Button Grid.Column="1" 
+                                        Content="Add Edge"
+                                        FontWeight="Normal"
+                                        FontSize="16" 
+                                        VerticalAlignment="Bottom"
+                                        HorizontalAlignment="Right" 
+                                        Width="80"
+                                        Click="BtnEdge_Click"/>
+
+                            </Grid>
+                            
+
+
+
+                            <ListBox Name="LsBoxVertices" 
+                                     Margin="5"
+                                     Grid.Row="1"
+                                     FontWeight="Normal"
+                                     SelectionChanged="HighlightSelectedVertices"/>
+
+                            <Grid Row="2">
+                                <Grid.ColumnDefinitions>
+                                    <ColumnDefinition Width="*"/>
+                                    <ColumnDefinition Width="*"/>
+                                    <ColumnDefinition Width="*"/>
+                                </Grid.ColumnDefinitions>
+
+                                <Button Name="BtnVertex" 
+                                        Content="Add" 
+                                        Width="75" 
+                                        VerticalAlignment="Center" 
+                                        Click="BtnVertex_Click" />
+                                
+                                <Button Name="BtnEdit" 
+                                        Content="Edit" 
+                                        Width="75" 
+                                        VerticalAlignment="Center" 
+                                        Click="BtnEdit_OnClick"
+                                        IsEnabled="False" 
+                                        Grid.Column="1"/>
+                                
+                                <Button Name="BtnDelete" 
+                                        Content="Delete" 
+                                        Width="75" 
+                                        VerticalAlignment="Center" 
+                                        Click="BtnDeleteEdit_OnClick" 
+                                        IsEnabled="False" 
+                                        Grid.Column="2"/>
+                            </Grid>
+
+
+
+
+                        </Grid>
+                    </TabItem>
+
+                    <TabItem Header="1" Visibility="Collapsed">
+                        <Grid Background="#FFE5E5E5">
+                            <Grid.RowDefinitions>
+                                <RowDefinition Height="*"/>
+                                <RowDefinition Height="8*"/>
+                                <RowDefinition Height="*"/>
+                            </Grid.RowDefinitions>
+
+                            <Label Content="Add Vertex" FontWeight="Bold" Grid.Row="0" VerticalAlignment="Center" HorizontalAlignment="Center"/>
+
+                            <Grid Grid.Row="1" Margin="5">
+                                <Grid.RowDefinitions>
+                                    <RowDefinition Height="*"/>
+                                    <RowDefinition Height="*"/>
+                                    <RowDefinition Height="*"/>
+                                    <RowDefinition Height="*"/>
+                                    <RowDefinition Height="*"/>
+                                    <RowDefinition Height="*"/>
+                                </Grid.RowDefinitions>
+                                <Grid.ColumnDefinitions>
+                                    <ColumnDefinition Width=".5*"/>
+                                    <ColumnDefinition Width="*"/>
+                                </Grid.ColumnDefinitions>
+
+                                <Label Content="Name:" Grid.Row="0" Grid.Column="0" VerticalAlignment="Center" HorizontalAlignment="Right"/>
+                                    <TextBox Name="TxtVertexName" 
+                                             Width="150" 
+                                             Grid.Row="0"
+                                             Grid.Column="1"
+                                             VerticalAlignment="Center" 
+                                             HorizontalAlignment="Left"
+                                             BorderBrush="Black"
+                                             Background="White"/>
+
+                                <Label Content="Vertex Location" 
+                                       FontWeight="Bold" 
+                                       Grid.Row="1" Grid.ColumnSpan="2"
+                                       Grid.Column="0" 
+                                       VerticalAlignment="Center" 
+                                       HorizontalAlignment="Center"/>
+
+                                <Label Content="X:" Grid.Row="2" Grid.Column="0" VerticalAlignment="Center" HorizontalAlignment="Right"/>
+                                    <TextBox Name="TxtXCoordinate" 
+                                             Grid.Row="2" Grid.Column="1"
+                                             Width="120" 
+                                             IsHitTestVisible="False"
+                                             VerticalAlignment="Center" 
+                                             HorizontalAlignment="Left"/>
+
+                                <Label Content="Y:" Grid.Row="3" Grid.Column="0" VerticalAlignment="Center" HorizontalAlignment="Right"/>
+                                    <TextBox Name="TxtYCoordinate" 
+                                             Grid.Row="3" Grid.Column="1"
+                                             IsHitTestVisible="False"  
+                                             Width="120" 
+                                             VerticalAlignment="Center" 
+                                             HorizontalAlignment="Left"/>
+
+                                <Button Name="BtnResetVertex"
+                                        Grid.Row="4"
+                                        Grid.ColumnSpan="2"
+                                        Width="200"
+                                        Content="Reset Coordinates"
+                                        Click="BtnResetVertex_OnClick"
+                                        Margin="5"/>
+
+
+                                
+
+                            </Grid>
+
+                            <Grid Row="2" >
+                                <Grid.ColumnDefinitions>
+                                    <ColumnDefinition Width="*"/>
+                                    <ColumnDefinition Width="*"/>
+                                    <ColumnDefinition Width="*"/>
+                                </Grid.ColumnDefinitions>
+
+                                <Button Name="BtnReturnVertex" 
+                                        Grid.Column="0"
+                                        VerticalAlignment="Center"
+                                        Width="75" 
+                                        Content="Return"
+                                        FontWeight="Bold"
+                                        Click="ReturnButton"/>
+
+                                <Button Name="BtnAddVertex" 
+                                        Grid.Column="2"
+                                        VerticalAlignment="Center"
+                                        Width="75" 
+                                        Content="Add" 
+                                        IsEnabled="False"
+                                        FontWeight="Bold"
+                                        Click="BtnAddVertex_OnClick"/>
+                            </Grid>
+
+                        </Grid>
+                    </TabItem>
+
+
+
+                    <TabItem Header="2" Visibility="Collapsed">
+                        <Grid Background="#FFE5E5E5">
+                            <Grid.RowDefinitions>
+                                <RowDefinition Height="*"/>
+                                <RowDefinition Height="8*"/>
+                                <RowDefinition Height="*"/>
+                            </Grid.RowDefinitions>
+
+
+                            
+
+                            <Label Content="Edit Vertices" FontWeight="Bold" Grid.Row="0" VerticalAlignment="Center" HorizontalAlignment="Center"/>
+
+
+                            <Grid Grid.Row="1">
+                                <Grid.RowDefinitions>
+                                    <RowDefinition Height="*" />
+                                    <RowDefinition Height="4*" />
+                                </Grid.RowDefinitions>
+
+
+                                <Grid Grid.Row="0">
+                                    <Grid.ColumnDefinitions>
+                                        <ColumnDefinition Width=".5*"/>
+                                        <ColumnDefinition Width="*"/>
+                                    </Grid.ColumnDefinitions>
+                                    <Label Content="Vertex:" Grid.Column="0" VerticalAlignment="Center" HorizontalAlignment="Right"/>
+                                    <ComboBox Name="CmbEditVertex"
+                                              VerticalAlignment="Center"
+                                              HorizontalAlignment="Left"
+                                              Width="150"  
+                                              Grid.Column="1" SelectionChanged="CmbEditVertex_SelectionChanged"/>
+
+
+                                </Grid>
+                               
+                                <Grid Grid.Row="1">
+                                    <TabControl Name="EditTab" Margin="5">
+                                        <TabItem Header="Rename">
+                                            <StackPanel Orientation="Vertical">
+
+                                                <Label Content="New Name" HorizontalAlignment="Center"/>
+
+                                                <TextBox Name="TxtEditName" Width="150"/>
+
+                                                <Button Name="BtnRenameEdit" 
+                                                        Content="Rename" 
+                                                        Width="150" 
+                                                        IsEnabled="False"
+                                                        Margin="0,20,0,0" 
+                                                        Click="BtnRenameEdit_Click"/>
+                                            </StackPanel>
+
+
+                                        </TabItem>
+                                        <TabItem Header="Move" HorizontalAlignment="Left" Width="66">
+
+                                            <StackPanel Orientation="Vertical" HorizontalAlignment="Center">
+
+                                                <Button Name="BtnTransferEdit" 
+                                                        Content="Transfer" 
+                                                        Width="150" 
+                                                        Margin="5" 
+                                                        IsEnabled="False"
+                                                        Click="BtnTransferEdit_Click"/>
+
+
+                                                <StackPanel Orientation="Vertical" Name="MovePanel" Visibility="Collapsed">
+                                                    <Label Content="New Coordinates"/>
+
+                                                    <StackPanel Orientation="Horizontal" Margin="5">
+                                                        <Label Content="X "/>
+                                                        <TextBox Width="100" Name="TxtBNewXCoordinates" IsHitTestVisible="False"/>
+                                                    </StackPanel>
+                                                    <StackPanel Orientation="Horizontal" Margin="5">
+                                                        <Label Content="Y "/>
+                                                        <TextBox Width="100" Name="TxtBNewYCoordinates" IsHitTestVisible="False"/>
+                                                    </StackPanel>
+                                                </StackPanel>
+
+
+                                            </StackPanel>
+
+                                        </TabItem>
+                                    </TabControl>
+
+                                </Grid>
+
+                                
+
+                            </Grid>
+
+                            <Grid Grid.Row="2" Margin="5">
+                                <Grid.ColumnDefinitions>
+                                    <ColumnDefinition Width="*"/>
+                                    <ColumnDefinition Width="*"/>
+                                    <ColumnDefinition Width="*"/>
+                                </Grid.ColumnDefinitions>
+
+                                <Button Content="Return" 
+                                        Width="75" 
+                                        Click="ReturnButton" 
+                                        Grid.Column="1" 
+                                        FontWeight="Bold"/>
+                            </Grid>
+
+
+
+                        </Grid>
+
+                    </TabItem>
+
+
+                    <TabItem Header="3" Visibility="Collapsed">
+
+                        <Grid Background="#FFE5E5E5">
+
+                            <Grid.RowDefinitions>
+                                <RowDefinition Height="*"/>
+                                <RowDefinition Height="8*"/>
+                                <RowDefinition Height="*"/>
+                            </Grid.RowDefinitions>
+
+                            <Label Content="Add Edge" 
+                                   FontWeight="Bold"
+                                   HorizontalAlignment="Center"
+                                   VerticalAlignment="Center"/>
+
+                            <Grid Grid.Row="1">
+
+                                <Grid.RowDefinitions>
+                                    <RowDefinition Height="*"/>
+                                    <RowDefinition Height="*"/>
+                                    <RowDefinition Height="*"/>
+                                    <RowDefinition Height="*"/>
+                                    <RowDefinition Height="*"/>
+                                    <RowDefinition Height="*"/>
+                                </Grid.RowDefinitions>
+
+                                <Grid.ColumnDefinitions>
+                                    <ColumnDefinition Width=".5*"></ColumnDefinition>
+                                    <ColumnDefinition Width="*"></ColumnDefinition>
+                                </Grid.ColumnDefinitions>
+
+                                    <Label Content="From:" Grid.Row="0"  Grid.Column="0" HorizontalAlignment="Right"  VerticalAlignment="Center"/>
+                                        <ComboBox Width="150"
+                                                  Name="CmbFromVertex"
+                                                  Grid.Row="0"
+                                                  Grid.Column="1"
+                                                  VerticalAlignment="Center"
+                                                  HorizontalAlignment="Left" 
+                                                  SelectionChanged="CmbFromVertex_SelectionChanged"/>
+
+
+                                <Label Content="To:" Grid.Row="1" Grid.Column="0" HorizontalAlignment="Right" VerticalAlignment="Center"/>
+                                        <ComboBox Width="150"
+                                                  Grid.Row="1"
+                                                  Grid.Column="1"
+                                                  Name="CmbToVertex"
+                                                  VerticalAlignment="Center"
+                                                  HorizontalAlignment="Left"
+                                                  SelectionChanged="CmbToVertex_SelectionChanged"/>
+
+                                <Label Content="Weight:" Grid.Row="2" Grid.Column="0" HorizontalAlignment="Right" VerticalAlignment="Center"/>
+                                        <TextBox Width="150"
+                                                 Grid.Row="2"
+                                                 Grid.Column="1"
+                                                 Name="TxtWeight" 
+                                                 HorizontalAlignment="Left" 
+                                                 VerticalAlignment="Center"
+                                                 PreviewTextInput="TextboxNumericInputOnly"
+                                                 TextChanged="TxtWeight_TextChanged"/>
+
+                                    <RadioButton Content="Undirected Edge" 
+                                                 Name="RBtnUndirected"
+                                                 Margin="5"
+                                                 Grid.Row="3"
+                                                 Grid.ColumnSpan="2" Grid.Column="0"
+                                                 HorizontalAlignment="Center"
+                                                 VerticalAlignment="Bottom"
+                                                 VerticalContentAlignment="Center" 
+                                                 Checked="RBtnUndirected_Checked"
+                                                 IsChecked="True"/>
+
+                                    <RadioButton Content="Directed Edge" 
+                                                     Name="RBtnDirected" 
+                                                     Margin="5" 
+                                                     Grid.Row="4"
+                                                     Grid.ColumnSpan="2" Grid.Column="0"
+                                                     HorizontalAlignment="Center"
+                                                     VerticalAlignment="Top"
+                                                     VerticalContentAlignment="Center" 
+                                                     Checked="RBtnDirected_Checked"/>
+
+                                    <Button Name="BtnAddEdge" 
+                                            Grid.Row="5"
+                                            Grid.ColumnSpan="2" Grid.Column="0"
+                                            Width="75" 
+                                            Content="Add" 
+                                            IsEnabled="False"
+                                            VerticalAlignment="Top"
+                                            HorizontalAlignment="Center"
+                                            Click="BtnAddEdge_OnClick"/>
+
+
+
+                            </Grid>
+
+                            <Grid Grid.Row="2" Margin="5">
+                                <Grid.ColumnDefinitions>
+                                    <ColumnDefinition Width="*"/>
+                                    <ColumnDefinition Width="*"/>
+                                    <ColumnDefinition Width="*"/>
+                                </Grid.ColumnDefinitions>
+
+                                
+
+                                <Button Name="BtnReturnEdge" 
+                                        Grid.Column="1"
+                                        Width="75" 
+                                        Content="Return" 
+                                        VerticalAlignment="Center"
+                                        HorizontalAlignment="Center"
+                                        Click="ReturnButton"/>
+                            </Grid>
+                            
+
+                            
+
+                        </Grid>
+                    </TabItem>
+                </TabControl>
+
+            </Grid>
+        </Grid>
+    </Grid>
+
+
+
+
+</Window>
