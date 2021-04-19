@@ -1,0 +1,29 @@
+C:\Users\kuya9\OneDrive\Desktop\Work\ACADS\Data Structure\Exercise\Naanep_FExer01\Naanep_FExer01\bin\Debug\Naanep_FExer01.exe.config
+C:\Users\kuya9\OneDrive\Desktop\Work\ACADS\Data Structure\Exercise\Naanep_FExer01\Naanep_FExer01\bin\Debug\Naanep_FExer01.exe
+C:\Users\kuya9\OneDrive\Desktop\Work\ACADS\Data Structure\Exercise\Naanep_FExer01\Naanep_FExer01\bin\Debug\Naanep_FExer01.pdb
+C:\Users\kuya9\OneDrive\Desktop\Work\ACADS\Data Structure\Exercise\Naanep_FExer01\Naanep_FExer01\obj\Debug\FExer01_A.csprojAssemblyReference.cache
+C:\Users\kuya9\OneDrive\Desktop\Work\ACADS\Data Structure\Exercise\Naanep_FExer01\Naanep_FExer01\obj\Debug\MainWindow.g.cs
+C:\Users\kuya9\OneDrive\Desktop\Work\ACADS\Data Structure\Exercise\Naanep_FExer01\Naanep_FExer01\obj\Debug\App.g.cs
+C:\Users\kuya9\OneDrive\Desktop\Work\ACADS\Data Structure\Exercise\Naanep_FExer01\Naanep_FExer01\obj\Debug\Naanep_FExer01_MarkupCompile.cache
+C:\Users\kuya9\OneDrive\Desktop\Work\ACADS\Data Structure\Exercise\Naanep_FExer01\Naanep_FExer01\obj\Debug\Naanep_FExer01_MarkupCompile.lref
+C:\Users\kuya9\OneDrive\Desktop\Work\ACADS\Data Structure\Exercise\Naanep_FExer01\Naanep_FExer01\obj\Debug\MainWindow.baml
+C:\Users\kuya9\OneDrive\Desktop\Work\ACADS\Data Structure\Exercise\Naanep_FExer01\Naanep_FExer01\obj\Debug\Naanep_FExer01.g.resources
+C:\Users\kuya9\OneDrive\Desktop\Work\ACADS\Data Structure\Exercise\Naanep_FExer01\Naanep_FExer01\obj\Debug\Naanep_FExer01.Properties.Resources.resources
+C:\Users\kuya9\OneDrive\Desktop\Work\ACADS\Data Structure\Exercise\Naanep_FExer01\Naanep_FExer01\obj\Debug\FExer01_A.csproj.GenerateResource.cache
+C:\Users\kuya9\OneDrive\Desktop\Work\ACADS\Data Structure\Exercise\Naanep_FExer01\Naanep_FExer01\obj\Debug\FExer01_A.csproj.CoreCompileInputs.cache
+C:\Users\kuya9\OneDrive\Desktop\Work\ACADS\Data Structure\Exercise\Naanep_FExer01\Naanep_FExer01\obj\Debug\Naanep_FExer01.exe
+C:\Users\kuya9\OneDrive\Desktop\Work\ACADS\Data Structure\Exercise\Naanep_FExer01\Naanep_FExer01\obj\Debug\Naanep_FExer01.pdb
+F:\Laptop Back Up\Work\ACADS\Data Structure\Exercise\Naanep_FExer01\Naanep_FExer01\bin\Debug\Naanep_FExer01.exe.config
+F:\Laptop Back Up\Work\ACADS\Data Structure\Exercise\Naanep_FExer01\Naanep_FExer01\bin\Debug\Naanep_FExer01.exe
+F:\Laptop Back Up\Work\ACADS\Data Structure\Exercise\Naanep_FExer01\Naanep_FExer01\bin\Debug\Naanep_FExer01.pdb
+F:\Laptop Back Up\Work\ACADS\Data Structure\Exercise\Naanep_FExer01\Naanep_FExer01\obj\Debug\FExer01_A.csprojAssemblyReference.cache
+F:\Laptop Back Up\Work\ACADS\Data Structure\Exercise\Naanep_FExer01\Naanep_FExer01\obj\Debug\MainWindow.g.cs
+F:\Laptop Back Up\Work\ACADS\Data Structure\Exercise\Naanep_FExer01\Naanep_FExer01\obj\Debug\App.g.cs
+F:\Laptop Back Up\Work\ACADS\Data Structure\Exercise\Naanep_FExer01\Naanep_FExer01\obj\Debug\Naanep_FExer01_MarkupCompile.cache
+F:\Laptop Back Up\Work\ACADS\Data Structure\Exercise\Naanep_FExer01\Naanep_FExer01\obj\Debug\Naanep_FExer01_MarkupCompile.lref
+F:\Laptop Back Up\Work\ACADS\Data Structure\Exercise\Naanep_FExer01\Naanep_FExer01\obj\Debug\MainWindow.baml
+F:\Laptop Back Up\Work\ACADS\Data Structure\Exercise\Naanep_FExer01\Naanep_FExer01\obj\Debug\Naanep_FExer01.g.resources
+F:\Laptop Back Up\Work\ACADS\Data Structure\Exercise\Naanep_FExer01\Naanep_FExer01\obj\Debug\Naanep_FExer01.Properties.Resources.resources
+F:\Laptop Back Up\Work\ACADS\Data Structure\Exercise\Naanep_FExer01\Naanep_FExer01\obj\Debug\FExer01_A.csproj.GenerateResource.cache
+F:\Laptop Back Up\Work\ACADS\Data Structure\Exercise\Naanep_FExer01\Naanep_FExer01\obj\Debug\Naanep_FExer01.exe
+F:\Laptop Back Up\Work\ACADS\Data Structure\Exercise\Naanep_FExer01\Naanep_FExer01\obj\Debug\Naanep_FExer01.pdb
